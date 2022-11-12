@@ -1,0 +1,41 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+</ion-content>
+<ion-app>
+  <ion-split-pane contentId="main"> -->
+    <!--  the side menu  -->
+    <ion-header>
+      <ion-toolbar color="primary">
+       
+        <!-- <ion-buttons slot="start">
+          <ion-back-button defaultHref="login"></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-buttons (click)="Salir()"></ion-buttons>
+        </ion-buttons> -->
+        <br><ion-title>Home</ion-title><br>
+        
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      
+      <ion-item *ngFor="let publicacion of publicaciones">
+        
+        <app-servicio [publicacion]=publicacion></app-servicio>
+
+        
+      
+      </ion-item>
+    </ion-content>
+    
+<ion-card>
+  <ion-img></ion-img>
+</ion-card>
